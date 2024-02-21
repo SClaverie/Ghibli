@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+  font-family: Merienda;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #8cd459;
+  font-family: Roboto;
+}
+
+p {
+  color: #8cd459;
+  opacity: .7;
+  font-family: Roboto;
+  font-style: italic;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/studio-ghibli.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 45px;
+  margin: 0;
+}
+
+.banner p {
+  color: white;
+  font-size: 24px;
+}
+
+.button-blue {
+  background-color: #7852A9;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button-blue:hover {
+  background-color: #0D1EC6;
+  color: white;
+  font-family: Merienda;
+}
+
+.love-ghibli {
+  font-family: Roboto;
+  font-size: 24px; 
+  font-weight: 700; 
+  color: black ; 
+  text-align: center;
+  margin-top: 50px;
+  }
+
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+.card-white img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-white h3 {
+  margin-bottom: 0;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/fresque-studio-ghibli.png');
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: white;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  font-family:Roboto;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
